@@ -45,4 +45,27 @@ def bill(name,contact,current_address,orderFromCustomer,folder):
         p.write("Cost with VAT($):"+ str(round(totalAmount+(13*totalAmount)/100,2))+"\n")
         p.write("Grand Total($) : " + str(round(GrandtotalAmount + totalAmount + ((13 * totalAmount) / 100), 2)) + "\n\n")
         p.write(f"Thank you dear {name} for buying laptops from us. Dear {name}, Do visit us again!!\n")
+        
+def sellingStock_write(validlaptopID,decrement):
+    laptop_dictionary = sellingStock_read()
+    with open("SellingStock.txt", "w") as X:
+        laptop_dictionary[validlaptopID][3] = decrement
+        for key, value in laptop_dictionary.items():
+            if key == validlaptopID:
+                value[3] = decrement
+            X.write(",".join(str(i) for i in value))
+            X.write("\n")
+
+def updatedsellingStock_write(changesinStock):
+    laptop_dictionary = sellingStock_read()
+    z = len(laptop_dictionary)+1
+    for i in changesinStock:
+        key = str(z)
+        laptop_dictionary[key] = list(i)
+        z +=1
+        with open("SellingStock.txt", "w") as Y:
+            for key, value in laptop_dictionary.items():
+                Y.write(",".join(str(i) for i in value))
+                Y.write("\n")
+
 
