@@ -1,0 +1,10 @@
+ROG,    ASUS,   2500,30,    i7 7th Gen,     RTX 3050Ti
+Razer Blade,    Razer,   2000,20,    i7 7th Gen,     GTX 3060
+XPS,            Dell,   1976,80,     i5 9th Gen,     GTX 3070
+Alienware,    Dell,   1978,60,  i5 9th Gen,      GTX 3070
+Swift 7,        Acer,   900,120,     i5 9th Gen,     GTX 3070
+Macbook Pro 16,Apple,   3500,220,    i5 9th Gen,     GTX 3070
+TUFgaming,        Asus ,   2300,300,    i5 11th Gen,  RTX 3050ti
+one,dsfds,2234,23,rsts,fdte
+one,dsfds,2234,23,rsts,fdte
+two,sdffd,2345,34,dfgf,wedf
